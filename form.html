@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ action }} Student</title>
+</head>
+<body>
+    <h1>{{ action }} Student</h1>
+    <form method="post">
+        Name: <input type="text" name="name" value="{{ student[1] if student else '' }}" required><br><br>
+        Age: <input type="number" name="age" value="{{ student[2] if student else '' }}" required><br><br>
+        <input type="submit" value="{{ action }}">
+        <a href="/">Cancel</a>
+    </form>
+</body>
+</html>
